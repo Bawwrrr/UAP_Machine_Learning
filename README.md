@@ -17,13 +17,14 @@ Sebelum memulai, pastikan bahwa Anda telah menginstal Python 3.7 atau lebih baru
 ### 1. Instalasi Dependensi
 Clone repositori ini ke dalam direktori lokal Anda:
 
-#bash
+```bash```
 git clone https://github.com/username/repository.git
 cd repository
+
 Instalasi dependensi Python yang diperlukan:
 
-bash
-Copy code
+```bash```
+Copy code :
 pip install -r requirements.txt
 File requirements.txt harus mencakup, di antaranya:
 
@@ -37,11 +38,12 @@ keras
 tensorflow
 streamlit
 joblib
-2. Menjalankan Aplikasi Web
+
+### 2. Menjalankan Aplikasi Web
 Untuk menjalankan aplikasi web menggunakan Streamlit, jalankan perintah berikut:
 
-bash
-Copy code
+```bash```
+Copy code :
 streamlit run app.py
 Aplikasi web akan terbuka di browser Anda. Anda dapat mengaksesnya melalui URL yang tertera di terminal.
 
@@ -67,29 +69,20 @@ Classification Report:
 Precision: 0.95
 Recall: 0.96
 F1-Score: 0.95
+
 XGBoost Classifier
 Akurasi: 96.52%
 Classification Report:
 Precision: 0.96
 Recall: 0.96
 F1-Score: 0.96
+
 Feedforward Neural Network (FFNN)
 Akurasi: 97.25%
 Classification Report:
 Precision: 0.97
 Recall: 0.97
 F1-Score: 0.97
-Hasil dan Analisis
-Grafik Confusion Matrix
-Untuk memberikan gambaran lebih jelas mengenai performa model, berikut adalah grafik confusion matrix untuk model Random Forest dan XGBoost.
-
-Random Forest Confusion Matrix
-
-XGBoost Confusion Matrix
-
-Grafik Akurasi dan Kerugian Feedforward Neural Network
-Grafik ini menunjukkan perubahan akurasi dan kerugian selama pelatihan model Feedforward Neural Network.
-
 
 Kesimpulan
 Dari hasil yang diperoleh, dapat disimpulkan bahwa Feedforward Neural Network menunjukkan performa yang sedikit lebih baik daripada Random Forest dan XGBoost dalam hal akurasi, meskipun semua model memberikan hasil yang sangat baik dalam klasifikasi penyakit hewan ternak. XGBoost juga menawarkan hasil yang cukup kompetitif, dengan waktu pelatihan yang lebih singkat dibandingkan dengan model neural network.
